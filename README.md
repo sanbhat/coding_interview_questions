@@ -23,6 +23,9 @@ List of some of the famous coding interview questions and their solutions.
 5. [Strings](#string)
 	1. [First recurring character within a string](#string_frc)
 	
+6. [Write your own questions](#wyo)
+	1. [WYO - HashMap](#wyi_hashmap)
+	
 <a id='arrays' />
 
 ### Arrays
@@ -85,4 +88,10 @@ List of some of the famous coding interview questions and their solutions.
 
 [FirstRecurringCharacter](src/string/FirstRecurringCharacter.java) - Find the first recurring character within a given string.
 
-<a id='tree' />
+<a id='wyo' />
+
+### Write your own - implementations
+
+"Write your own" interview questions, tests your ability of understanding a particular concept or data structure.
+
+[HashMap](src/writeyourown/HashMap.java) - HashMap is a hash based Key-Value pair data structure, which will give `O(1)` time complexity for put and get operations. "Write-your-own" HashMap is a famous Java data structure based interview question to understand, how deep you know about this famous data structure.
