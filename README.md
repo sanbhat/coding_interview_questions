@@ -8,6 +8,8 @@ List of some of the famous coding interview questions and their solutions.
 	2. [Find Pythagoras Triplets](#arrays_pt)
 	3. [Find 3 items whose sum matches K](#arrays_ts)
 	4. [Stock Span Problem](#arrays_ss)
+	5. [Longest Increasing Subsequence](#array_lis)
+	6. [Max Difference between two elements](#array_mdiff)
 
 2. [2D Arrays / Matrix](#matrix)
 	1. [Rotate Matrix by 90 degree](#matrix_rotate90)
@@ -45,6 +47,14 @@ List of some of the famous coding interview questions and their solutions.
 <a id='arrays_ss' />
 
 [StockSpan](src/arrays/StockSpan.java) - [https://www.geeksforgeeks.org/the-stock-span-problem/](https://www.geeksforgeeks.org/the-stock-span-problem/)
+
+<a id='array_lis' />
+
+[LongestIncreasingSubsequence](src/arrays/LongestIncreasingSubsequence.java) - [https://www.interviewbit.com/problems/longest-increasing-subsequence/](https://www.interviewbit.com/problems/longest-increasing-subsequence/). Find the number of elements in the longest increasing subsequence.
+
+<a id='array_mdiff' />
+
+[Maximum Difference between two elements](src/arrays/MaxDifferenceBetween2Numbers.java) - [https://www.geeksforgeeks.org/maximum-difference-between-two-elements/](https://www.geeksforgeeks.org/maximum-difference-between-two-elements/) - Maximum difference between two elements such that larger element appears after the smaller number.
 
 <a id='matrix' />
 
