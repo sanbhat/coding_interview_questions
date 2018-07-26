@@ -28,6 +28,11 @@ List of some of the famous coding interview questions and their solutions.
 6. [Write your own questions](#wyo)
 	1. [WYO - HashMap](#wyi_hashmap)
 	
+7. [Tree](#tree)
+	1. [Height of Binary Tree](#tree_height)
+	2. [Tree Column Wise Sum](#tree_cws)
+	3. [Zig Zag Level order Traversal](#tree_zigzag)
+	
 <a id='arrays' />
 
 ### Arrays
@@ -105,3 +110,19 @@ List of some of the famous coding interview questions and their solutions.
 "Write your own" interview questions, tests your ability of understanding a particular concept or data structure.
 
 [HashMap](src/writeyourown/HashMap.java) - HashMap is a hash based Key-Value pair data structure, which will give `O(1)` time complexity for put and get operations. "Write-your-own" HashMap is a famous Java data structure based interview question to understand, how deep you know about this famous data structure.
+
+<a id='tree' />
+
+### Tree
+
+<a id='tree_height' />
+
+[HeightOfBinaryTree](src/tree/HeightOfBinaryTree.java) - is a recursive way of finding the height of a binary tree (height of binary tree - max (height of left sub-tree, height of right sub-tree)
+
+<a id='tree_cws' />
+
+[Column Wise Sum of Binary Tree](src/tree/TreeColumnWiseSum.java) - Column wise sum of binary tree
+
+<a id='tree_zigzag' />
+
+[Zig Zag Traversal on Binary Tree](src/tree/ZigZagTraversalBinaryTree.java) - Zig Zag traversal on binary tree (level order) using 2 stacks
