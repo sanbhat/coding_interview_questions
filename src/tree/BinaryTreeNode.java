@@ -1,12 +1,12 @@
 package tree;
 
-public class Node {
+public class BinaryTreeNode {
 
 	int data;
-	Node left;
-	Node right;
+	BinaryTreeNode left;
+	BinaryTreeNode right;
 	
-	Node(int data) {
+	BinaryTreeNode(int data) {
 		this.data = data;
 	}
 

@@ -11,7 +11,7 @@ package tree;
  */
 public class TraverseEdgeNodesOfBinaryTree {
 
-	private void traverseLeaves(Node x) {
+	private void traverseLeaves(BinaryTreeNode x) {
 		if(x != null) {
 			traverseLeaves(x.left);
 			
@@ -23,7 +23,7 @@ public class TraverseEdgeNodesOfBinaryTree {
 		}
 	}
 	
-	private void traverseLeftEdges(Node x) {
+	private void traverseLeftEdges(BinaryTreeNode x) {
 		if(x != null) {
 			if(x.left != null) {
 				System.out.println(x.data);
@@ -36,7 +36,7 @@ public class TraverseEdgeNodesOfBinaryTree {
 	}
 	
 	
-	private void traverseRightEdges(Node x) {
+	private void traverseRightEdges(BinaryTreeNode x) {
 		if(x != null) {
 			if(x.right != null) {
 				System.out.println(x.data);
@@ -48,27 +48,36 @@ public class TraverseEdgeNodesOfBinaryTree {
 		}
 	}
 	
-	public void traverseEdges(Node root) {
+	public void traverseEdges(BinaryTreeNode root) {
 		if(root != null) {
 			System.out.println(root.data);
 			
 			traverseLeftEdges(root.left);
 			traverseLeaves(root.left);
-			traverseLeaves(root.right);
-			traverseRightEdges(root.right);
+			//traverseLeaves(root.right);
+			//traverseRightEdges(root.right);
 		}
 	}
+
+	//                     20
+	//					/     \
+	//                8		  22
+	//				/	\	 	\
+	//			 4		 12		25
+	//					/  \
+	//				 10		14
+
 	
 	
 	public static void main(String[] args) {
-        Node root = new Node(20);
-        root.left = new Node(8);
-        root.left.left = new Node(4);
-        root.left.right = new Node(12);
-        root.left.right.left = new Node(10);
-        root.left.right.right = new Node(14);
-        root.right = new Node(22);
-        root.right.right = new Node(25);
+        BinaryTreeNode root = new BinaryTreeNode(20);
+        root.left = new BinaryTreeNode(8);
+        root.left.left = new BinaryTreeNode(4);
+        root.left.right = new BinaryTreeNode(12);
+        root.left.right.left = new BinaryTreeNode(10);
+        root.left.right.right = new BinaryTreeNode(14);
+        root.right = new BinaryTreeNode(22);
+        root.right.right = new BinaryTreeNode(25);
         new TraverseEdgeNodesOfBinaryTree().traverseEdges(root);
 	}
 }

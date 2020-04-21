@@ -37,9 +37,9 @@ public class MergingPointOf2Lists {
 	}
 	
 	public static void main(String[] args) {
-		Node common = new Node(6);
-		common.next = new Node(7);
-		common.next.next = new Node(8);
+		Node common = new Node(7);
+		common.next = new Node(8);
+		common.next.next = new Node(9);
 		
 		Node head1 = new Node(1);
 		head1.next = new Node(2);
@@ -49,6 +49,7 @@ public class MergingPointOf2Lists {
 		Node head2 = new Node(4);
 		head2.next = new Node(5);
 		head2.next.next = common;
+		//head2.next.next.next = common;
 		
 		System.out.println(new MergingPointOf2Lists().findMergingPoint(head1, head2));
 	}

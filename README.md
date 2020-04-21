@@ -32,6 +32,7 @@ List of some of the famous coding interview questions and their solutions.
 	1. [Height of Binary Tree](#tree_height)
 	2. [Tree Column Wise Sum](#tree_cws)
 	3. [Zig Zag Level order Traversal](#tree_zigzag)
+	4. [Check if 2 Binary trees are identical](#tree_identical)
 	
 <a id='arrays' />
 
@@ -126,3 +127,7 @@ List of some of the famous coding interview questions and their solutions.
 <a id='tree_zigzag' />
 
 [Zig Zag Traversal on Binary Tree](src/tree/ZigZagTraversalBinaryTree.java) - Zig Zag traversal on binary tree (level order) using 2 stacks
+
+<a id='tree_identical' />
+
+[Check if 2 binary trees are identical](src/tree/CheckIdenticalBinaryTree.java) - Using recursion to find out if 2 binary trees are identical

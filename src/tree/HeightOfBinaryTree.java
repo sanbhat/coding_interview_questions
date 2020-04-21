@@ -2,11 +2,11 @@ package tree;
 
 public class HeightOfBinaryTree {
 
-	static int height(Node root) {
+	static int height(BinaryTreeNode root) {
         return height(root, 0);
     }
 
-    static int height(Node x, int h) {
+    static int height(BinaryTreeNode x, int h) {
         int r = h;
         if(x != null) {
             if(x.left != null) {
@@ -26,14 +26,14 @@ public class HeightOfBinaryTree {
     }
 	
 	public static void main(String[] args) {
-		Node root = new Node(3);
-		root.left = new Node(2);
-		root.left.left = new Node(1);
+		BinaryTreeNode root = new BinaryTreeNode(3);
+		root.left = new BinaryTreeNode(2);
+		root.left.left = new BinaryTreeNode(1);
 		
-		root.right = new Node(5);
-		root.right.left = new Node(4);
-		root.right.right = new Node(6);
-		root.right.right.right = new Node(7);
+		root.right = new BinaryTreeNode(5);
+		root.right.left = new BinaryTreeNode(4);
+		root.right.right = new BinaryTreeNode(6);
+		root.right.right.right = new BinaryTreeNode(7);
 		
 		System.out.println(height(root));
 	}
