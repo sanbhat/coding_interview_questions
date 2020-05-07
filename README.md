@@ -84,13 +84,13 @@ List of some of the famous coding interview questions and their solutions.
 
 <a id='matrix_rotate90' />
 
-[RotateMatrixBy90Degree.java](src/matrix/RotateMatrixBy90Degree.java) - Given a `n * n` matrix, rotate its element by 90 degrees.
+[RotateMatrixBy90Degree](src/matrix/RotateMatrixBy90Degree.java) - Given a `n * n` matrix, rotate its element by 90 degrees.
 
 ### Numbers
 
 <a id='numbers_fib' />
 
-[FibonacciSeries.java (Dynamic Programming)](src/numbers/FibonacciSeries.java) - Find Fibonacci series upto N.
+[FibonacciSeries (Dynamic Programming)](src/numbers/FibonacciSeries.java) - Find Fibonacci series upto N.
 
 <a id='numbers_prime_range' />
 
@@ -98,7 +98,7 @@ List of some of the famous coding interview questions and their solutions.
 
 <a id='numbers_missing_seq' />
 
-[FindMissingNumbersInIncreasingArray.java](src/numbers/FindMissingNumberInIncreasingArray.java) - Given an array which has numbers from [1...N] find the missing number.
+[FindMissingNumbersInIncreasingArray](src/numbers/FindMissingNumberInIncreasingArray.java) - Given an array which has numbers from [1...N] find the missing number.
 
 
 <a id='linkedlist' />
@@ -162,6 +162,7 @@ List of some of the famous coding interview questions and their solutions.
 [LRUCache](src/writeyourown/LRUCache.java) - LRU Cache - is a key-value pair, which is of fixed length. Whenever the capacity of the cache reaches to MAX, then it evicts the "Least Recently Used" key.
 
 <a id='wyo_fastDs' />
+
 [FastDS](src/writeyourown/FastDS.java) - A custom data structure, which performs add, delete, get and getRandom() operation @ O(n) complexity
 
 <a id='tree' />
@@ -206,4 +207,4 @@ List of some of the famous coding interview questions and their solutions.
 
 <a id='tree_to_sumtree' />
 
-[BinartTreeToSumTree](src/tree/BinaryTreeToSumTree.java) - Right view of the Binary Tree
+[BinartTreeToSumTree](src/tree/BinaryTreeToSumTree.java) - Binary tree to the sum tree problem. Each parent node will have a value = cumulative (left node value + right node value)
