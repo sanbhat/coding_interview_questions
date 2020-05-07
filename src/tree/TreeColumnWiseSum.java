@@ -1,5 +1,7 @@
 package tree;
 
+import tree.model.BinaryTreeNode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,21 +10,14 @@ import java.util.Map.Entry;
 
 public class TreeColumnWiseSum {
 
-	class TreeNode {
-		int value;
-		
-		TreeNode left;
-		
-		TreeNode right;
-	}
 	
-	public Map<Integer, Integer> getColumnWiseSum(TreeNode root) {
-		Map<TreeNode, Integer> columns = new HashMap<>();
+	public Map<Integer, Integer> getColumnWiseSum(BinaryTreeNode root) {
+		Map<BinaryTreeNode, Integer> columns = new HashMap<>();
 		getColumns(columns, root, 0);
 		
 		//Convert the TreeNode vs. Column ID to Column ID vs. List<TreeNode>
-		Map<Integer, List<TreeNode>> m = new HashMap<>();
-		for(Entry<TreeNode, Integer> e : columns.entrySet()) {
+		Map<Integer, List<BinaryTreeNode>> m = new HashMap<>();
+		for(Entry<BinaryTreeNode, Integer> e : columns.entrySet()) {
 			if(!m.containsKey(e.getValue())) {
 				m.put(e.getValue(), new ArrayList<>());
 			} 
@@ -31,8 +26,8 @@ public class TreeColumnWiseSum {
 		
 		//for each column, calculate max sum
 		Map<Integer, Integer> result = new HashMap<>();
-		for(Entry<Integer, List<TreeNode>> e : m.entrySet()) {
-			int value = e.getValue().stream().mapToInt(t -> t.value).sum();
+		for(Entry<Integer, List<BinaryTreeNode>> e : m.entrySet()) {
+			int value = e.getValue().stream().mapToInt(t -> t.data).sum();
 			result.put(e.getKey(), value);
 		}
 		
@@ -47,7 +42,7 @@ public class TreeColumnWiseSum {
 	 * @param node
 	 * @param c
 	 */
-	private void getColumns(Map<TreeNode, Integer> columns, TreeNode node, int c) {
+	private void getColumns(Map<BinaryTreeNode, Integer> columns, BinaryTreeNode node, int c) {
 		columns.put(node, c);
 		if(node.left != null) {
 			getColumns(columns, node.left, c--);

@@ -1,5 +1,7 @@
 package tree;
 
+import tree.model.BinaryTreeNode;
+
 /**
  * Traverse edge nodes of binary tree from root to left bottom, then left bottom to
  * right bottom and finally right bottom till root.

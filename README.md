@@ -14,6 +14,11 @@ List of some of the famous coding interview questions and their solutions.
 2. [2D Arrays / Matrix](#matrix)
 	1. [Rotate Matrix by 90 degree](#matrix_rotate90)
 	
+3. [Numbers](#numbers)
+    1. [Fibonacci Series](#numbers_fib)
+    2. [Find all prime numbers in a Range](#numbers_prime_range)
+    3. [Find Missing numbers in Increasing sequence](#numbers_missing_seq)
+	
 3. [Linked Lists](#linkedlist)
 	1. [Add 2 Numbers represented by Linked List](#linkedlist_add)
 	2. [Find the merging point of 2 linked lists](#linkedlist_merge)
@@ -24,15 +29,26 @@ List of some of the famous coding interview questions and their solutions.
 	
 5. [Strings](#string)
 	1. [First recurring character within a string](#string_frc)
+	2. [Given a string, find all sub-strings which are Palindromes](#string_all_sub_palindromes)
+	3. [Replace char with word](#string_replace)
+	4. [Find if 2 strings are Anagram](#string_anagram)
 	
 6. [Write your own questions](#wyo)
-	1. [WYO - HashMap](#wyi_hashmap)
+	1. [WYO - HashMap](#wyo_hashmap)
+	2. [LRU Cache](#wyo_lrucache)
+	3. [Fast DS](#wyo_fastDS)
 	
 7. [Tree](#tree)
 	1. [Height of Binary Tree](#tree_height)
 	2. [Tree Column Wise Sum](#tree_cws)
 	3. [Zig Zag Level order Traversal](#tree_zigzag)
 	4. [Check if 2 Binary trees are identical](#tree_identical)
+	5. [Binary Tree - Right View](#tree_rightview)
+	6. [Binary Tree - Top View](#tree_topview)
+	7. [Binary Tree - Traversal](#tree_traversal)
+	8. [Binary Tree - Level Order Traversal](#tree_levelorder_traversal)
+	9. [Binary Tree - Reverse Level Order Traversal](#tree_levelorder_reverse_traversal)
+	10. [Binary Tree to Sum Tree](#tree_to_sumtree)
 	
 <a id='arrays' />
 
@@ -70,6 +86,21 @@ List of some of the famous coding interview questions and their solutions.
 
 [RotateMatrixBy90Degree.java](src/matrix/RotateMatrixBy90Degree.java) - Given a `n * n` matrix, rotate its element by 90 degrees.
 
+### Numbers
+
+<a id='numbers_fib' />
+
+[FibonacciSeries.java (Dynamic Programming)](src/numbers/FibonacciSeries.java) - Find Fibonacci series upto N.
+
+<a id='numbers_prime_range' />
+
+[FindAllPrimeNumbersInRange](src/numbers/FindAllPrimeNumbersInRange.java) - Find all prime numbers in a given range (N, M)
+
+<a id='numbers_missing_seq' />
+
+[FindMissingNumbersInIncreasingArray.java](src/numbers/FindMissingNumberInIncreasingArray.java) - Given an array which has numbers from [1...N] find the missing number.
+
+
 <a id='linkedlist' />
 
 ### Linked Lists
@@ -104,13 +135,34 @@ List of some of the famous coding interview questions and their solutions.
 
 [FirstRecurringCharacter](src/string/FirstRecurringCharacter.java) - Find the first recurring character within a given string.
 
+<a id='string_all_sub_palindromes' />
+
+[AllSubstringPalindromes](src/string/AllSubstringPalindromes.java) - Given a string, find all the substrings of that string which are palindrome
+
+<a id='string_replace' />
+
+[ReplaceACharWithAWord](src/string/ReplaceACharWithAWord.java) - Replace a single char of a String, with a word (String replace without using Java built-in functions)
+
+<a id='string_anagram' />
+
+[TwoStringAnagram](src/string/TwoStringAnagram.java) - Find of 2 strings are Anagrams
+
 <a id='wyo' />
 
 ### Write your own - implementations
 
 "Write your own" interview questions, tests your ability of understanding a particular concept or data structure.
 
+<a id='wyo_hashmap' />
+
 [HashMap](src/writeyourown/HashMap.java) - HashMap is a hash based Key-Value pair data structure, which will give `O(1)` time complexity for put and get operations. "Write-your-own" HashMap is a famous Java data structure based interview question to understand, how deep you know about this famous data structure.
+
+<a id='wyo_lrucache' />
+
+[LRUCache](src/writeyourown/LRUCache.java) - LRU Cache - is a key-value pair, which is of fixed length. Whenever the capacity of the cache reaches to MAX, then it evicts the "Least Recently Used" key.
+
+<a id='wyo_fastDs' />
+[FastDS](src/writeyourown/FastDS.java) - A custom data structure, which performs add, delete, get and getRandom() operation @ O(n) complexity
 
 <a id='tree' />
 
@@ -131,3 +183,27 @@ List of some of the famous coding interview questions and their solutions.
 <a id='tree_identical' />
 
 [Check if 2 binary trees are identical](src/tree/CheckIdenticalBinaryTree.java) - Using recursion to find out if 2 binary trees are identical
+
+<a id='tree_rightview' />
+
+[RightView](src/tree/RightView.java) - Right view of the Binary Tree
+
+<a id='tree_topview' />
+
+[TopView](src/tree/TopView.java) - Top view of the Binary Tree
+
+<a id='tree_traversal' />
+
+[Traversal](src/tree/Traversal.java) - All 3 traversals of Binary Tree (Inorder, Preorder and Postorder)
+
+<a id='tree_levelorder_traversal' />
+
+[LevelOrderTraversal](src/tree/LevelOrderTraversal.java) - Level order Traversal of the Binary Tree
+
+<a id='tree_levelorder_reverse_traversal' />
+
+[ReverseLevelOrderTraversal](src/tree/ReverseLevelOrderTraversal.java) - Reverse Level order Traversal of the Binary Tree
+
+<a id='tree_to_sumtree' />
+
+[BinartTreeToSumTree](src/tree/BinaryTreeToSumTree.java) - Right view of the Binary Tree

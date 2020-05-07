@@ -1,5 +1,7 @@
 package tree;
 
+import tree.model.BinaryTreeNode;
+
 import java.util.Stack;
 
 public class ZigZagTraversalBinaryTree {
@@ -33,7 +35,10 @@ public class ZigZagTraversalBinaryTree {
 			}
 		}
 	}
-	
+
+	//  			1
+	//			2		3
+	//		  7	  6    5  4
 	public static void main(String[] args) {
 		BinaryTreeNode root = new BinaryTreeNode(1);
 	    root.left = new BinaryTreeNode(2);

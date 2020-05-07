@@ -1,5 +1,7 @@
 package tree;
 
+import tree.model.BinaryTreeNode;
+
 public class CheckIdenticalBinaryTree {
 
     public static boolean isIdentical(BinaryTreeNode x, BinaryTreeNode y) {

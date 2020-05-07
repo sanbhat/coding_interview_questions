@@ -1,29 +1,20 @@
 package tree;
 
+import tree.model.BinaryTreeNode;
+
 public class HeightOfBinaryTree {
 
 	static int height(BinaryTreeNode root) {
-        return height(root, 0);
+        if(root == null) {
+            return 0;
+        }
+        return 1 + Math.max(height(root.left), height(root.right));
     }
 
-    static int height(BinaryTreeNode x, int h) {
-        int r = h;
-        if(x != null) {
-            if(x.left != null) {
-                int lh = height(x.left, h+1);
-                if(lh > h) {
-                    r = lh;
-                }
-            }
-            if(x.right != null) {
-                int rh = height(x.right, h+1);
-                if(rh > h) {
-                    r = rh;
-                }
-            }
-        }
-        return r;
-    }
+    //              3
+    //           2       5
+    //         1       4    6
+    //                          7
 	
 	public static void main(String[] args) {
 		BinaryTreeNode root = new BinaryTreeNode(3);
